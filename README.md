@@ -25,31 +25,31 @@ Antes de ejecutar este proyecto, necesitas tener los siguientes requisitos:
 4. Tener un clúster de Kubernetes corriendo. Si no tienes uno configurado, puedes usar Minikube para crear uno. Para iniciar el clúster con Minikube, ejecuta el siguiente comando:
 
 ```bash
-   minikube start
+minikube start
 ```
 
    ## Pasos para Ejecutar el Proyecto
    ### 1. Inicializar Terraform
 
 ```bash
-    terraform init
+terraform init
 ```
 
  ### 2. Aplicar la Configuración de Terraform
 
 ```bash
-    terraform apply
+terraform apply
 ```
 
  ### 3. Verificar los Servicios
  #### Nginx
 
 ```bash
-    minikube service nginx-service
+minikube service nginx-service
 ```
 
  #### App Python
 
 ```bash
-    minikube service python-app-service
+minikube service python-app-service
 ```
